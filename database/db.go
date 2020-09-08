@@ -26,8 +26,8 @@ func DBConn() *sqlx.DB {
 	dbInfo += "dbname=" + fmt.Sprint(os.Getenv("DB_NAME")) + " "
 	dbInfo += "sslmode=disable"
 
-	log.Println("Connecting to Database . . .")
-	log.Println(dbInfo)
+	log.Println("Connecting to Database . . . . .")
+	// log.Println(dbInfo)
 
 	db, err := sqlx.Open("postgres", dbInfo)
 	if err != nil {
