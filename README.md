@@ -1,2 +1,2 @@
 # go-echo-api
-Practice
+Personal Golang Practice: Rest API CRUD with Echo Web Framework.
