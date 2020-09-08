@@ -39,5 +39,5 @@ func List(c echo.Context) (err error) {
 		list = append(list, &character)
 	}
 
-	return c.JSON(http.StatusOK, list)
+	return c.JSON(http.StatusOK, map[string]interface{}{"characters": list})
 }
