@@ -12,7 +12,7 @@ import (
 )
 
 // List all data from Character
-func List(c echo.Context) (err error) {
+func ListCharacter(c echo.Context) (err error) {
 	db := database.DBConn()
 	defer db.Close()
 
